@@ -20,6 +20,7 @@ header { display: flex; justify-content: space-between; align-items: center; min
 .brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; font-weight: 900; }
 .brand span { display: grid; place-items: center; width: 36px; height: 36px; color: #fff; background: var(--green); border-radius: 11px; }
 .guide-link { color: var(--green); font-size: .9rem; font-weight: 700; text-decoration: none; }
+.header-links { display: flex; gap: 1.2rem; }
 .hero { padding: clamp(5rem,10vw,9rem) max(1.2rem,calc((100vw - 1180px)/2)); background: radial-gradient(circle at 86% 20%,rgba(185,204,118,.28),transparent 28rem),var(--ink); color: #f8f6ed; }
 .eyebrow { color: #9cb45e; font-size: .76rem; font-weight: 900; letter-spacing: .18em; }
 .hero h1 { max-width: 1000px; margin: 1rem 0 1.5rem; font-family: "Songti SC","STSong",serif; font-size: clamp(3rem,7vw,6.5rem); line-height: 1.05; letter-spacing: -.05em; }
@@ -74,10 +75,10 @@ footer p { margin: .3rem 0 0; font-size: .85rem; }
 }
 @media(max-width:520px) {
   header { align-items: flex-start; flex-direction: column; gap: .5rem; padding-top: .8rem; padding-bottom: .8rem; }
+  .header-links { width: 100%; justify-content: space-between; gap: .8rem; }
   .hero h1 { font-size: 2.75rem; }
   .status { width: 100%; }
   .filters { width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: .3rem; }
   .filters button { white-space: nowrap; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .tool-card { transition: none; } }
-
